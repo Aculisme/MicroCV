@@ -13,7 +13,7 @@ From the command line, run `python main.py IMAGE_FILENAME`, where `IMAGE_FILENAM
 Quit the python window by pressing `q`, or quitting the process from the command line.
 
 ## Interface
-![MicroCV interface screenshot](interface.jpg)
+![MicroCV interface screenshot](interface.png)
 
 The provided sliders may be used to refine the feature detection parameters. The sliders correspond to the following parameters:
 
