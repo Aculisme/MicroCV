@@ -19,3 +19,6 @@ The provided sliders may be used to refine the feature detection parameters. The
 - max_radius: Maximum radius to be detected. If unknown, put zero as default.
 
 Quit the python window by pressing `q`, or quitting the process from the command line.
+
+>*Note that even with optimal settings, some features may not be detected. MicroCV is a tool intended to _aid_ microbial 
+growth enumeration -- not automate it entirely. It is your responsibility to manually add false negatives / remove false positives from your tally.*    
