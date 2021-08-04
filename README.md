@@ -1,5 +1,5 @@
 # MicroCV
-_Petri dish OpenCV blob detection_
+_Petri dish OpenCV feature detection_
 
 ## Installation
 
@@ -25,3 +25,11 @@ The provided sliders may be used to refine the feature detection parameters. The
 
 >*Note that even with optimal settings, some features may not be detected. MicroCV is a tool intended to _aid_ microbial 
 growth enumeration -- not automate it entirely. It is your responsibility to manually add false negatives / remove false positives from your tally.*    
+
+## Background info
+
+The algorithm behind MicroCV works in three steps: 
+- first, it pre-processes the provided image by greyscaling, blurring, and smoothing it
+- next, it applies [Circle Hough Transforms](https://en.wikipedia.org/wiki/Circle_Hough_Transform) to the image with 
+parameters defined by the interface sliders, extracting the locations of all detected growths
+- lastly, circles are drawn at the extracted location and radius.
