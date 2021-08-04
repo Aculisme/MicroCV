@@ -58,7 +58,9 @@ def generate_image(filename, min_dist, edge_threshold, centre_threshold, min_rad
             radius = i[2]  # circle outline
             cv2.circle(src, center, radius, (255, 0, 255), 3)
 
-    cv2.putText(src, "{} circles".format(circles.shape[1]), (100,100), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255) )
+    text_loc = (100, 100)
+    inverted_color = (int(255 - src[text_loc][0]), int(255 - src[text_loc][1]), int(255 - src[text_loc][2]))
+    cv2.putText(src, "{} circles".format(circles.shape[1]), text_loc, cv2.FONT_HERSHEY_SIMPLEX, 1.5, inverted_color)
 
     return src
 
