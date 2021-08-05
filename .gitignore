@@ -1,1 +1,6 @@
 .idea
+approach1.py
+approach2.py
+sample2_cropped.png
+saved_images/*
+!saved_images/.gitignore
