@@ -39,9 +39,9 @@ def main(argv):
         # press 'q' to quit the window
         if key == ord('q'):
             break
-
+        saved_image_path = "saved_images/"
         if key == ord('s'):
-            cv2.imwrite("image saved {}.png".format(datetime.now()), src)
+            cv2.imwrite("{0}image saved {1}.png".format(saved_image_path, datetime.now()), src)
 
     cv2.destroyAllWindows()
     return 0
